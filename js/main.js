@@ -1,18 +1,16 @@
 'use strict';
 
 
-var dogAge = parseInt(prompt('¿cuántos años tiene tu perro?'));
-var humanAge = 0;
+var treeHeight = parseInt(prompt('¿cuántos pisos tendrá tu árbol de Navidad?'));
+var treeDraw = '▲';
+var counter = '';
 
-for (var i = 1 ; i <= dogAge; i++) {
-  if (i === 1) {
-humanAge = humanAge + 15;
-  }
-else if (i === 2) {
-humanAge = humanAge + 9;
-  }
-else {
-  humanAge = humanAge + 5;
+
+for (var i = 0 ; i < treeHeight; i++) {
+for (var j = 0; j <= i; j++) {
+  counter = counter + treeDraw;
 }
-};
-alert('tu perro tiene ' + dogAge + ' años perrunos que equivalen a ' + humanAge + ' años humanos :)');
+counter = counter + '\n';
+}
+
+alert(counter);
